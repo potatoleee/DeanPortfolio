@@ -217,20 +217,28 @@ main {
       letter-spacing: 1px;
       margin: 40px 0;
       position: relative; }
+      @media (max-width: 767px) {
+        .header .nav__list .nav__item a {
+          font-size: 32px;
+          font-family: 'Playfair Display', serif;
+          font-weight: 600;
+          margin: 64px; } }
       .header .nav__list .nav__item a::before {
         content: "";
         position: absolute;
         width: 0%;
         height: 2px;
         bottom: -2px;
+        left: 0;
         background-color: #5A685D;
         -webkit-transition: all .5s;
         -o-transition: all .5s;
         transition: all .5s; }
       .header .nav__list .nav__item a:hover::before {
         width: 100%; }
-  .header .nav__list.open {
-    height: 100vh; }
+  @media (max-width: 767px) {
+    .header .nav__list.open {
+      height: 100vh; } }
 
 .btn__buger {
   cursor: pointer;
