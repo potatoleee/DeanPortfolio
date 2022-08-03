@@ -1,0 +1,26 @@
+.footer{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    .social{
+        gap:0px 24px;
+        margin-bottom: 16px;
+        img{
+            transition: all .5s;
+            &:hover{
+                opacity: .5;
+            }
+        }
+    }
+    .copyRight{
+        flex-wrap: wrap;
+        span{
+            margin: 0 8px;
+        }
+        a{
+            transition: all .5s;
+            &:hover{
+                color:$link-hover;
+            }
+        }
+    }
+}

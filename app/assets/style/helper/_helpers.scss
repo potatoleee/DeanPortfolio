@@ -1,0 +1,36 @@
+// 容器類
+.container{
+    max-width: 1352px;
+    margin: 0 auto;
+    padding: 0  16px;
+    @include pad{
+        max-width: 752px;
+    }
+}
+.container-header{
+    padding: 0 4vw;
+    margin: 0 auto;
+}
+.container-footer{
+    padding: 0 4vw;
+    margin: 0 auto;
+}
+
+// flex
+.d-flex{
+    display: flex;
+}
+.jcsb{
+    justify-content: space-between;
+}
+.jcc{
+    justify-content: center;
+}
+.align-center{
+align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+
+

@@ -1,0 +1,102 @@
+.banner{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include pad{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @include phone{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    &__text{
+        &__chinese{
+            font-size: 3vmin;
+            margin-bottom: 24px;
+        }
+        &__english{
+            font-size: 2.5vmin;
+            margin-bottom: 48px;
+        }
+    }
+    img{
+        width: 49%;
+        margin-left: 51%;
+        @include pad{
+            width: 61.11%;
+            margin-left: 38.89%;
+        }
+        @include phone{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+
+.about{
+    position: relative;
+    margin-top: 144px;
+    margin-bottom: 144px;
+    h3{
+        font-size: 64px;
+    }
+    p{
+        font-size: 20px;
+        width: 57.575758%;
+        margin: 0 auto;
+        padding: 80px 0;
+        padding-bottom: 200px;
+    }
+    .about__more{
+        text-align: right;
+    }
+    .about__more__link{
+        font-size: 24px;
+        // position: relative;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color:$bg-color;
+        margin-right: 16px;
+        transition: all .5s;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: $secondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            border-radius: 20%;
+        }
+    }
+}
+.work{
+    h3{
+        font-size: 64px;
+        margin-bottom: 100px;
+    }
+    &__item{
+        margin: 0 auto;
+        width: 66%;
+        margin-bottom: 80px;
+        @include pad{
+            width: 100%;
+        }
+        .work__img{
+            overflow: hidden;
+            img{
+                transition: all 1.2s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+       
+        &__title{
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-size: 24px;
+        }
+    }
+}

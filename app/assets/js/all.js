@@ -1,5 +1,10 @@
-console.log('Hello!');
+
 
 $(document).ready(() => {
-  console.log('HesSchool Hello!');
+  $('.btn__buger').on('click',function(e){
+    $('.btn__buger').toggleClass('open');
+    $('.nav__list').toggleClass('open');
+
+
+  })
 });
