@@ -5,24 +5,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁</title>
+  <title>李東穎作品集網站 Dean Portfolio | 首頁</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- google fonts -->
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
   <header class="header">
-    這是 header
+    <nav class="container-header d-flex jcsb ">
+      <div class="logo">
+        <h1><a href="index.html" title="李東穎作品集 DeanPortfolio">李東穎作品集 DeanPortfolio</a></h1>
+      </div>
+      <ul class="nav__list d-flex">
+        <li class="nav__item"><a class="ff-poppins fw-light" href="about.html">About</a></li>
+        <li class="nav__item"><a class="ff-poppins fw-light" href="work.html">Work</a></li>
+        <li class="nav__item"><a class="ff-poppins fw-light" href="mailto:dean19990226@gmail.com">Contact</a></li>
+      </ul>
+      <div class="btn__buger"></div>
+    </nav>
   </header>
+  <main>
+     <div class="banner container">
+  <h2 class="banner__text__chinese">哩賀，我是李東穎，專注於網頁設計及前端開發</h2>
+  <h2 class="banner__text__english ff-poppins">Hello,  I‘m Dean,Foucs on web design and font-end devlop。</h2>
+  <img src="./assets/images/李東穎照片橫式.jpg" alt="">
+</div>
+<section class="about container">
+  <h3 class="ff-playFair fw-semiBold">About me</h3>
+   <p>因為視差滾動，吸引我進入網頁設計這個廣大的世界
+    從電機系跨領域，學習一直有很興趣的設計產業，
+    喜歡幽默、美麗，創意的事物，也很期待和強者學習創造出耳目一新的產品。
+    處此之外，我也喜歡彈吉他、滑滑板、烹飪料理、股票投資...
+  </p>
+  <a class="about__more__link" href="about.html">more</a>
+ 
+</section>
 
+<section class="work container">
+  <h3 class="ff-playFair fw-semiBold">Work</h3>
+
+
+  <div class="work__item">
+    <a class="work__img" href="work-iiincookie.html"><img src="./assets/images/newbanner.jpg" alt="餅乾生產餡"></a>
+    <p class="work__item__title">餅乾生產餡-官方網站</p>
+    <p class="work__item__text">Web,UI/UX Design,Development,2022</p>
+  </div>
+
+  <div class="work__item">
+    <a class="work__img" href="#"><img src="./assets/images/newbanner.jpg" alt="餅乾生產餡"></a>
+    <p class="work__item__title">餅乾生產餡-官方網站</p>
+    <p class="work__item__text">Web,UI/UX Design,Development,2022</p>
+  </div>
   
-<h1>
-  新的作品集網站
-</h1>
 
-<div class="box"></div>
-
-  <footer class="footer">
-    footer
+</section>
+  </main>
+  <footer class="footer container-footer">
+    <ul class="social d-flex">
+      <li><a href=""><img src="./assets/images/icon-github.svg" alt=""></a></li>
+      <li><a href=""><img src="./assets/images/icon-ig.svg" alt=""></a></li>
+      <li><a href=""><img src="./assets/images/icon-medium.svg" alt=""></a></li>
+    </ul>
+    <div class="copyRight d-flex">
+      <p>© 李東穎 Dean Lee <span>|</span></p>
+      <a href="mailto:dean19990226@gmail.com">dean19990226@gmail.com</a>
+    </div>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
