@@ -52,25 +52,38 @@ main{
             height: 0;
             overflow: hidden;
         }
+
         .nav__item{
                 a{
                 font-size: 20px;
                 letter-spacing: 1px;
                 margin: 40px 0;
                 position: relative;    
+                @include phone{
+                    font-size: 32px;
+                     font-family: 'Playfair Display', serif;
+                     font-weight: 600;
+                     margin: 64px;
+                }
                 &::before{
+                    // 底線效果
                     content: "";
                     position: absolute;
                     width: 0%;
                     height: 2px;
                     bottom: -2px;
+                    left: 0;
+                    // right: 0;
+                    // margin: auto;可以從中間展開效果
                     background-color:$secondary;
                     transition: all .5s;
+                  
 
                 }
                 &:hover{
                     &::before{
                         width: 100%;
+                      
                     }
                 }
                 
@@ -78,7 +91,9 @@ main{
         }
     }
     .nav__list.open{
+        @include phone{
         height: 100vh;
+        }
     }
 }
 
